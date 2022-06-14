@@ -407,8 +407,8 @@ document.getElementById("btnTim").onclick = function (event) {
   var toaDoY2 = document.getElementById("toaDoY2").value;
   var toaDoX3 = document.getElementById("toaDoX3").value;
   var toaDoY3 = document.getElementById("toaDoY3").value;
-  var toaDoX4 = document.getElementById("toaDoX3").value;
-  var toaDoY4 = document.getElementById("toaDoY3").value;
+  var toaDoX4 = document.getElementById("toaDoX4").value;
+  var toaDoY4 = document.getElementById("toaDoY4").value;
   var doDai1 = Math.sqrt(
     Math.pow(toaDoX4 - toaDoX1, 2) + Math.pow(toaDoY4 - toaDoY1, 2)
   );
@@ -419,11 +419,11 @@ document.getElementById("btnTim").onclick = function (event) {
     Math.pow(toaDoX4 - toaDoX3, 2) + Math.pow(toaDoY4 - toaDoY3, 2)
   );
   var ketQua = "";
-  if (doDai1 < doDai2 && doDai1 < doDai3) {
+  if (doDai1 > doDai2 && doDai1 > doDai3) {
     var ketQua = "Sinh viên xa trường nhất: " + tenSV1;
-  } else if (doDai2 < doDai1 && doDai2 < doDai3) {
+  } else if (doDai2 > doDai1 && doDai2 > doDai3) {
     var ketQua = "Sinh viên xa trường nhất: " + tenSV2;
-  } else if (doDai3 < doDai1 && doDai3 < doDai2) {
+  } else if (doDai3 > doDai1 && doDai3 > doDai2) {
     var ketQua = "Sinh viên xa trường nhất: " + tenSV3;
   } else {
     ketQua = "Không xác định";
